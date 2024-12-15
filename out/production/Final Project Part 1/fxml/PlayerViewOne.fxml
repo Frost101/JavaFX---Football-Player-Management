@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="727.0" style="-fx-background-color: #002E55;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayerViewOneController">
+    <children>
+        <Label layoutX="235.0" layoutY="59.0" text="Country : " textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="481.0" layoutY="58.0" text="Club:" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="249.0" layoutY="82.0" text="Age:" textFill="#fcfcfc">
+            <font>
+                <Font name="Arial Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="475.0" layoutY="81.0" text="Height:" textFill="#fcfcfc">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="238.0" layoutY="107.0" text="Position:" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="471.0" layoutY="106.0" text="Number:" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="211.0" layoutY="131.0" text="Weekly Salary:" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="nameLabelID" alignment="CENTER" layoutX="249.0" layoutY="8.0" prefHeight="42.0" prefWidth="339.0" text="Sadik Hossain" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font></Label>
+        <Label fx:id="countryLabelID" alignment="CENTER" layoutX="286.0" layoutY="58.0" prefHeight="15.0" prefWidth="175.0" text="Label" textFill="#fafafa">
+            <font>
+                <Font name="Arial Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="clubLabelID" alignment="CENTER" layoutX="526.0" layoutY="57.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="ageLabelID" alignment="CENTER" layoutX="286.0" layoutY="80.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="#f7f5f5">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="heightLabelID" alignment="CENTER" layoutX="526.0" layoutY="80.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="positionLabelID" alignment="CENTER" layoutX="286.0" layoutY="106.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="numberLabelID" alignment="CENTER" layoutX="526.0" layoutY="105.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="weeklySalaryLabelID" alignment="CENTER" layoutX="286.0" layoutY="130.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <ImageView fx:id="imageViewID" fitHeight="130.0" fitWidth="165.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>

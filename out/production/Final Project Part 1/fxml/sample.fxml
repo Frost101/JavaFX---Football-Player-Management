@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="933.0" style="-fx-background-color: #221646;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomePageController">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="652.0" prefWidth="210.0" style="-fx-background-color: #9664C5;">
+         <children>
+            <VBox layoutX="-1.0" layoutY="93.0" prefHeight="597.0" prefWidth="214.0" style="-fx-background-color: #4D3478;">
+               <children>
+                  <Button fx:id="playerSearchButtonID" mnemonicParsing="false" onAction="#ActiveSearchPlayerMenu" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: #4D3478;" text="Search Players" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin></Button>
+                  <Button fx:id="clubSearchButtonID" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ActiveSearchClubMenu" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: #4D3478;" text="Search Club" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="addPlayerButtonID" layoutX="10.0" layoutY="64.0" mnemonicParsing="false" onAction="#ActiveAddPlayersMenu" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: #4D3478;" text="Add Players" textFill="WHITE" />
+                  <Button fx:id="loginButtonID" layoutX="10.0" layoutY="119.0" mnemonicParsing="false" onAction="#ActiveLogInMenu" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: #4D3478;" text="Log In" textFill="WHITE" />
+                  <Button fx:id="exitButtonID" layoutX="10.0" layoutY="173.0" mnemonicParsing="false" onAction="#ActiveExitMenu" prefHeight="54.0" prefWidth="218.0" style="-fx-background-color: #4D3478;" text="Exit" textFill="WHITE" />
+               </children>
+            </VBox>
+            <Button fx:id="homeButtonID" layoutX="-1.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="214.0" text="Home" textOverrun="WORD_ELLIPSIS" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="218.0" layoutY="3.0" prefHeight="691.0" prefWidth="714.0">
+         <children>
+            <Label layoutX="28.0" layoutY="26.0" prefHeight="184.0" prefWidth="657.0" text="Welcome To Football Player Database Management System" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="933.0" style="-fx-background-color: #221646;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeMenuController">
+   <children>
+      <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="652.0" prefWidth="210.0" style="-fx-background-color: #9664C5;">
+         <children>
+            <VBox layoutX="-1.0" layoutY="93.0" prefHeight="597.0" prefWidth="214.0" style="-fx-background-color: #4D3478;">
+               <children>
+                  <HBox id="button" alignment="CENTER" onMouseClicked="#activeSearchPlayerMenu" prefHeight="54.0" prefWidth="218.0" stylesheets="@../css/Button.css">
+                     <children>
+                        <ImageView fx:id="searchPlayersImage" fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="   Search Players" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                     </children>
+                     <styleClass>
+                        <String fx:value="#button:hover" />
+                        <String fx:value="#button:pressed" />
+                     </styleClass>
+                  </HBox>
+                  <HBox id="button" alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#activeSearchClubMenu" prefHeight="54.0" prefWidth="218.0" styleClass="#button:hover" stylesheets="@../css/Button.css">
+                     <children>
+                        <ImageView fx:id="searchClubImage" fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="   Search Club" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox id="button" alignment="CENTER" layoutX="10.0" layoutY="64.0" onMouseClicked="#activateMarketPlace" prefHeight="54.0" prefWidth="218.0" styleClass="#button:hover" stylesheets="@../css/Button.css">
+                     <children>
+                        <ImageView fx:id="marketPlaceImage" fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="   Market Place" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox id="button" alignment="CENTER" layoutX="10.0" layoutY="119.0" onMouseClicked="#activateSellPlayers" prefHeight="54.0" prefWidth="218.0" styleClass="#button:hover" stylesheets="@../css/Button.css">
+                     <children>
+                        <ImageView fx:id="sellPlayersImage" fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="   Sell Players" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox id="button" alignment="CENTER" layoutX="10.0" layoutY="173.0" onMouseClicked="#activeLogInMenu" prefHeight="54.0" prefWidth="218.0" styleClass="#button:hover" stylesheets="@../css/Button.css">
+                     <children>
+                        <ImageView fx:id="logInImage" fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="   Log Out" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+                  <HBox id="button" alignment="CENTER" layoutX="10.0" layoutY="228.0" onMouseClicked="#activeExitMenu" prefHeight="54.0" prefWidth="218.0" styleClass="#button:hover" stylesheets="@../css/Button.css">
+                     <children>
+                        <ImageView fx:id="exitImage" fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label text="   Exit" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold Italic" size="13.0" />
+                           </font></Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="homeButtonID" layoutX="-1.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="214.0" style="-fx-background-color: #4D3478;" text="Home" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Arial Bold Italic" size="13.0" />
+               </font></Button>
+            <ImageView fx:id="imageHome" fitHeight="32.0" fitWidth="29.0" layoutX="50.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="218.0" layoutY="3.0" prefHeight="691.0" prefWidth="714.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" prefHeight="159.0" prefWidth="658.0" text="Football Manager 2021" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="clubNameLabelID" alignment="CENTER" layoutX="178.0" layoutY="110.0" prefHeight="82.0" prefWidth="358.0" text="Manchester United" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="clubImage" fitHeight="290.0" fitWidth="347.0" layoutX="188.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

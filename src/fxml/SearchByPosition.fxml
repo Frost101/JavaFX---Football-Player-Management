@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="933.0" style="-fx-background-color: #221646;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SearchByPositionController">
+    <children>
+        <TextField fx:id="searchTextFieldID" layoutX="252.0" layoutY="136.0" prefHeight="26.0" prefWidth="482.0" />
+        <Button fx:id="searchButtonID" layoutX="418.0" layoutY="173.0" mnemonicParsing="false" onAction="#activateSearch" prefHeight="26.0" prefWidth="150.0" text="Search" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="382.0" layoutY="109.0" prefHeight="18.0" prefWidth="234.0" text="Enter Position" textFill="#f4f2f2">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="184.0" layoutY="8.0" prefHeight="57.0" prefWidth="618.0" text="Search By Position" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <ScrollPane layoutX="71.0" layoutY="216.0" prefHeight="468.0" prefWidth="792.0">
+            <content>
+                <GridPane fx:id="gridPaneID" prefHeight="211.0" prefWidth="790.0">
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+            </content>
+        </ScrollPane>
+      <Label fx:id="clubLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="72.0" prefHeight="18.0" prefWidth="158.0" text="MANCHESTER UNITED" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <HBox id="button" alignment="CENTER" onMouseClicked="#activateGoBack" prefHeight="63.0" prefWidth="121.0" stylesheets="@../css/Button.css">
+         <children>
+            <ImageView fx:id="goBackImage" fitHeight="32.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" text="  Go Back" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="#button" />
+            <String fx:value="#button:hover" />
+         </styleClass>
+      </HBox>
+      <ImageView fx:id="clubImage" fitHeight="58.0" fitWidth="68.0" layoutX="863.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</AnchorPane>

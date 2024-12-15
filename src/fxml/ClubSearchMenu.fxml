@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="933.0" style="-fx-background-color: #221646;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ClubSearchMenuController">
+    <children>
+        <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="652.0" prefWidth="210.0" style="-fx-background-color: #9664C5;">
+            <children>
+                <VBox layoutX="-1.0" layoutY="93.0" prefHeight="598.0" prefWidth="240.0" style="-fx-background-color: #4D3478;">
+               <children>
+                        <Button id="button" fx:id="playersWithTheMaximumSalaryButtonID" mnemonicParsing="false" onAction="#activatePlayersWithTheMaximumSalaryMenu" prefHeight="54.0" prefWidth="244.0" stylesheets="@../css/Button.css" text="Player(s) With The Maximum Salary" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="#button" />
+                        <String fx:value="#button:hover" />
+                     </styleClass>
+                  </Button>
+                        <Button id="button" fx:id="playersWithTheMaximumAgeButtonID" mnemonicParsing="false" onAction="#activatePlayersWithTheMaximumAgeMenu" prefHeight="54.0" prefWidth="242.0" stylesheets="@../css/Button.css" text="Player(s) With The Maximum Age" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold Italic" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="#button" />
+                        <String fx:value="#button:hover" />
+                     </styleClass>
+                        </Button>
+                        <Button id="button" fx:id="playersWithTheMaximumHeightButtonID" mnemonicParsing="false" onAction="#activatePlayersWithTheMaximumHeightMenu" prefHeight="54.0" prefWidth="240.0" stylesheets="@../css/Button.css" text="Player(s) With The Maximum Height" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold Italic" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="#button" />
+                        <String fx:value="#button:hover" />
+                     </styleClass>
+                  </Button>
+                        <Button id="button" fx:id="totalSalaryButtonID" mnemonicParsing="false" onAction="#activateTotalSalaryButtonIDMenu" prefHeight="54.0" prefWidth="241.0" stylesheets="@../css/Button.css" text="Total Salary" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold Italic" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="#button" />
+                        <String fx:value="#button:hover" />
+                     </styleClass>
+                  </Button>
+                        <Button id="button" fx:id="backToMainMenuButtonID" mnemonicParsing="false" onAction="#activateBackToMainMenu" prefHeight="54.0" prefWidth="239.0" stylesheets="@../css/Button.css" text="Back To Main Menu" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold Italic" size="12.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="#button" />
+                        <String fx:value="#button:hover" />
+                     </styleClass>
+                  </Button>
+               </children>
+                </VBox>
+                <Button fx:id="homeButtonID" layoutX="-1.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="240.0" style="-fx-background-color: #4D3478;" text="Club Search" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="Arial Bold Italic" size="13.0" />
+               </font></Button>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="245.0" layoutY="3.0" prefHeight="691.0" prefWidth="687.0">
+            <children>
+                <Label alignment="CENTER" layoutX="35.0" layoutY="26.0" prefHeight="123.0" prefWidth="628.0" text="Club Search" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Bold Italic" size="36.0" />
+                    </font>
+                </Label>
+            <Label fx:id="clubNameLabelID" alignment="CENTER" layoutX="175.0" layoutY="134.0" prefHeight="82.0" prefWidth="358.0" text="Manchester United" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="clubImage" fitHeight="290.0" fitWidth="347.0" layoutX="175.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

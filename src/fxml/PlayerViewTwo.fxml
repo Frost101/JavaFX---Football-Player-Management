@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="727.0" style="-fx-background-color: #002E55;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayerViewTwoController">
+    <children>
+        <Label layoutX="33.0" layoutY="39.0" text="Country : " textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="262.0" layoutY="40.0" text="Club:" textFill="WHITE">
+            <font>
+                <Font name="Arial Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="53.0" layoutY="58.0" text="Age:" textFill="#fcfcfc">
+            <font>
+                <Font name="Arial Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="257.0" layoutY="57.0" text="Height:" textFill="#fcfcfc">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="493.0" layoutY="39.0" text="Position:" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="253.0" layoutY="75.0" text="Number:" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label layoutX="19.0" layoutY="75.0" text="Weekly Salary:" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="nameLabelID" alignment="CENTER" layoutX="161.0" prefHeight="42.0" prefWidth="339.0" text="Sadik Hossain" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font></Label>
+        <Label fx:id="countryLabelID" alignment="TOP_LEFT" layoutX="89.0" layoutY="40.0" prefHeight="15.0" prefWidth="175.0" text="Label" textFill="#fafafa">
+            <font>
+                <Font name="Arial Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="clubLabelID" alignment="TOP_LEFT" layoutX="303.0" layoutY="38.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="ageLabelID" alignment="TOP_LEFT" layoutX="89.0" layoutY="57.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="#f7f5f5">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="heightLabelID" alignment="TOP_LEFT" layoutX="303.0" layoutY="57.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="positionLabelID" alignment="TOP_LEFT" layoutX="543.0" layoutY="38.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="numberLabelID" alignment="TOP_LEFT" layoutX="303.0" layoutY="74.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+        <Label fx:id="weeklySalaryLabelID" alignment="TOP_LEFT" layoutX="103.0" layoutY="75.0" prefHeight="18.0" prefWidth="175.0" text="Label" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font></Label>
+      <HBox alignment="CENTER" layoutX="594.0" layoutY="55.0" onMouseClicked="#activateButton" prefHeight="28.0" prefWidth="108.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label fx:id="actionLabel" alignment="CENTER" prefHeight="18.0" prefWidth="48.0" text="buy" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>
